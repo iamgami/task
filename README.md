@@ -1,9 +1,4 @@
-#### Laravel-Auth is a Complete Build of Laravel 5.5 with Email Registration Verification, Social Authentication, User Roles and Permissions, User Profiles, and Admin restricted user management system.
-[![Build Status](https://travis-ci.org/jeremykenedy/laravel-auth.svg?branch=master)](https://travis-ci.org/jeremykenedy/laravel-auth)
-[![StyleCI](https://styleci.io/repos/44714043/shield?branch=master)](https://styleci.io/repos/44714043)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jeremykenedy/laravel-auth/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jeremykenedy/laravel-auth/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/jeremykenedy/laravel-auth/badges/build.png?b=master)](https://scrutinizer-ci.com/g/jeremykenedy/laravel-auth/build-status/master)
-[![License](http://jeremykenedy.com/license-mit.svg)](https://raw.githubusercontent.com/jeremykenedy/laravel-auth/LICENSE)
+#### Task is a Complete Build of Laravel 5.5 with Email Registration Verification, Social Authentication, User Roles and Permissions, User Profiles, and Admin restricted user management system.
 
 #### READY FOR USE!
 - [About](#about)
@@ -60,7 +55,7 @@ Laravel 5.5 with user authentication, registration with email confirmation, soci
 |User Gravatar using [Gravatar API](https://github.com/creativeorange/gravatar)|
 |User Password Reset via Email Token|
 |User Login with remember password|
-|User [Roles/ACL Implementation](https://github.com/jeremykenedy/laravel-roles)|
+|User [Roles/ACL Implementation](https://github.com/iamgami/laravel-roles)|
 |Makes of [Laravel's Soft Delete Structure](https://laravel.com/docs/5.5/eloquent#soft-deleting)|
 |Soft Deleted Users Management System|
 |Permanently Delete Soft Deleted Users|
@@ -76,13 +71,13 @@ Laravel 5.5 with user authentication, registration with email confirmation, soci
 |User Themes|
 |404 Page|
 |403 Page|
-|Configurable Email Notification via [Laravel-Exception-Notifier](https://github.com/jeremykenedy/laravel-exception-notifier)|
+|Configurable Email Notification via [Laravel-Exception-Notifier](https://github.com/iamgami/laravel-exception-notifier)|
 |User Delete with Goodby email|
 |User Restore Deleted Account|
-|Activity Logging using [Laravel-logger](https://github.com/jeremykenedy/laravel-logger)|
+|Activity Logging using [Laravel-logger](https://github.com/iamgami/laravel-logger)|
 
 ### Installation Instructions
-1. Run `sudo git clone https://github.com/jeremykenedy/laravel-auth.git laravel-auth`
+1. Run `sudo git clone https://github.com/iamgami/task.git laravel-auth`
 2. Create a MySQL database for the project
     * ```mysql -u root -p```, if using Vagrant: ```mysql -u homestead -psecret```
     * ```create database laravelAuth;```
@@ -90,9 +85,9 @@ Laravel 5.5 with user authentication, registration with email confirmation, soci
 3. From the projects root run `cp .env.example .env`
 4. Configure your `.env` file // NOTE: Google API Key will prevent maps error
 5. Run `sudo composer update` from the projects root folder
-6. Run `php artisan vendor:publish --provider="jeremykenedy\LaravelRoles\RolesServiceProvider" --tag=config`
-7. Run `php artisan vendor:publish --provider="jeremykenedy\LaravelRoles\RolesServiceProvider" --tag=migrations`
-8. Run `php artisan vendor:publish --provider="jeremykenedy\LaravelRoles\RolesServiceProvider" --tag=seeds`
+6. Run `php artisan vendor:publish --provider="iamgami\LaravelRoles\RolesServiceProvider" --tag=config`
+7. Run `php artisan vendor:publish --provider="iamgami\LaravelRoles\RolesServiceProvider" --tag=migrations`
+8. Run `php artisan vendor:publish --provider="iamgami\LaravelRoles\RolesServiceProvider" --tag=seeds`
 9. From the projects root folder run `sudo chmod -R 755 ../laravel-auth`
 10. From the projects root folder run `php artisan key:generate`
 11. From the projects root folder run `php artisan migrate`
@@ -137,7 +132,7 @@ npm install
 |admin@admin.com|password|Admin Access|
 
 4. Themes Seed List
-  * [ThemesTableSeeder](https://github.com/jeremykenedy/laravel-auth/blob/master/database/seeds/ThemesTableSeeder.php)
+  * [ThemesTableSeeder](https://github.com/iamgami/task/blob/master/database/seeds/ThemesTableSeeder.php)
 
 ### Routes
 
@@ -405,8 +400,8 @@ INSTAGRAM_REDIRECT_URI=http://laravel-authentication.local/social/handle/instagr
 * https://laravel.com/docs/5.5/errors
 
 ###### Updates:
-* Added activity logging using [Laravel-logger](https://github.com/jeremykenedy/laravel-logger)
-* Added Configurable Email Notification using [Laravel-Exception-Notifier](https://github.com/jeremykenedy/laravel-exception-notifier)
+* Added activity logging using [Laravel-logger](https://github.com/iamgami/laravel-logger)
+* Added Configurable Email Notification using [Laravel-Exception-Notifier](https://github.com/iamgami/laravel-exception-notifier)
 * Update to Laravel 5.5
 * Added User Delete with Goodbye email
 * Added User Restore Deleted Account from email with secure token
